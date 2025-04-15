@@ -7,28 +7,29 @@ public class Simulacro : MonoBehaviour
     // Start is called before the first frame update
 
     public string nombreAlumno;
-    public int año;
+    public int anio;
     public string orientacion;
 
     void Start()
     {
         if (nombreAlumno == "")
         {
-            Debug.Log("ERROR");
+            Debug.Log("El nombre no puede estar vacío");
             return;
         }
-       else if (año > 5){
+       if (anio < 1 || anio > 5){
 
-            Debug.Log("ERROR");
+            Debug.Log("Año ingresado no válido");
             return;
         }
        
-        else if (orientacion != "T"|| orientacion != "G"|| orientacion != "H" || orientacion != "M"|| orientacion != "D")
+        if (orientacion != "T"|| orientacion != "G"|| orientacion != "H" || orientacion != "M"|| orientacion != "D")
         {
             Debug.Log("Solo puede ingresar T, D, G, M o H");
             return;
         }
-       else if (año < 3)
+       
+        if (anio < 3)
 
         {
             Debug.Log("Error. Aún estás en el ciclo básico");
