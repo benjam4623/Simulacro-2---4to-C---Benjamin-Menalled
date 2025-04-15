@@ -225,7 +225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombreAlumno: Benjamin Menalled
   anio: 1
-  orientacion: Z
+  orientacion: T
 --- !u!4 &2124077490
 Transform:
   m_ObjectHideFlags: 0
